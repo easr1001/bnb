@@ -3,47 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top 20 BNB Meme Coins Market Cap Ranking | BNB MEME币市值排行榜前20</title>
-    <meta name="title" content="Top 20 BNB Meme Coins Market Cap Ranking | BNB MEME币市值排行榜前20">
-    <meta name="description" content="实时查看 BNB Chain 上 MEME 类型加密货币市值排名前20，包括 Floki、Baby Doge Coin、Cheems 等热门 BNB meme 币的价格、市值和24h变化。专属 BNB 过滤，每日更新。">
-    <meta name="keywords" content="bnb meme coins, BNB MEME币排行, bnb meme 市值, top 20 bnb meme, floki, baby doge coin, cheems">
-    <meta property="og:title" content="Top 20 BNB Meme Coins Market Cap Ranking">
-    <meta property="og:description" content="探索前20名 BNB MEME 币的实时市值排名！">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Top+20+BNB+Meme+Coins">
-    <meta property="og:url" content="">
-    <meta property="og:type" content="website">
-    <link rel="canonical" href="">
+    <title>BNB链市值前20 MEME币排行榜 - 2025年10月</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "Top 20 BNB Meme Coins Market Cap Ranking",
-        "description": "BNB Chain 上 MEME 类型加密货币市值前20排名",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Floki",
-                "url": "https://www.coingecko.com/en/coins/floki"
-            }
-        ]
-    }
-    </script>
 </head>
 <body>
-    <header>
-        <h1>Top 20 BNB Meme Coins Market Cap Ranking</h1>
-        <p>实时 BNB MEME 币市值排行榜 | 更新时间: <span id="update-time"></span></p>
-    </header>
-    <main>
-        <section id="loading" class="loading">加载中... 正在获取最新 BNB MEME 币市值数据</section>
-        <section id="error" class="error" style="display: none;">数据加载失败，请刷新页面。</section>
-        <ul id="meme-list" class="meme-grid" style="display: none;"></ul>
-    </main>
-    <footer>
-        <p>&copy; 2025 BNB Meme Coins Top 20. 数据来源: CoinGecko API (BNB Chain Ecosystem).</p>
-    </footer>
+    <h1>BNB链市值前20 MEME币排行榜</h1>
+    <p>数据来源：CoinMarketCap / CoinGecko / DEXScreener（2025年10月20日更新，市值单位：亿美元，价格单位：美元）</p>
+    
+    <table id="memeTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">排名</th>
+                <th onclick="sortTable(1)">币种名称</th>
+                <th>符号</th>
+                <th onclick="sortTable(2)">市值 (亿美元)</th>
+                <th onclick="sortTable(3)">当前价格 (美元)</th>
+                <th onclick="sortTable(4)">24h 变化 (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Floki Inu</td>
+                <td>FLOKI</td>
+                <td class="market-cap">13.5</td>
+                <td class="price">0.000139</td>
+                <td class="change-up">+5.2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bonk</td>
+                <td>BONK</td>
+                <td class="market-cap">9.4</td>
+                <td class="price">0.0000338</td>
+                <td class="change-down">-1.8</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Baby Doge Coin</td>
+                <td>BABYDOGE</td>
+                <td class="market-cap">9.31</td>
+                <td class="price">0.000000002</td>
+                <td class="change-up">+3.1</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Simon’s Cat</td>
+                <td>CAT</td>
+                <td class="market-cap">4.3</td>
+                <td class="price">0.00006871</td>
+                <td class="change-up">+12.4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>4 (CZ Meme)</td>
+                <td>FOUR</td>
+                <td class="market-cap">2.43</td>
+                <td class="price">0.00243</td>
+                <td class="change-up">+25.0</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Cheems</td>
+                <td>CHEEMS</td>
+                <td class="market-cap">2.5</td>
+                <td class="price">0.000025</td>
+                <td class="change-down">-2.5</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>CZ’s Dog</td>
+                <td>CZDOG</td>
+                <td class="market-cap">1.8</td>
+                <td class="price">0.0018</td>
+                <td class="change-up">+15.6</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Test Token</td>
+                <td>TEST</td>
+                <td class="market-cap">1.2</td>
+                <td class="price">0.012</td>
+                <td class="change-up">+8.9</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Paul</td>
+                <td>PALU</td>
+                <td class="market-cap">0.95</td>
+                <td class="price">0.00095</td>
+                <td class="change-up">+2246</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>客服小何 (Binance Life)</td>
+                <td>XH</td>
+                <td class="market-cap">0.72</td>
+                <td class="price">0.0072</td>
+                <td class="change-up">+415</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Broccoli</td>
+                <td>BROCCOLI</td>
+                <td class="market-cap">0.5</td>
+                <td class="price">0.005</td>
+                <td class="change-up">+10.2</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Wise Monkey</td>
+                <td>MONKY</td>
+                <td class="market-cap">0.4</td>
+                <td class="price">0.004</td>
+                <td class="change-down">-0.5</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Binance Dog</td>
+                <td>BINANCEDOG</td>
+                <td class="market-cap">0.35</td>
+                <td class="price">0.0035</td>
+                <td class="change-up">+7.3</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>BUILDOn</td>
+                <td>B</td>
+                <td class="market-cap">0.509</td>
+                <td class="price">0.509</td>
+                <td class="change-up">+4.1</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>EGL1</td>
+                <td>EGL1</td>
+                <td class="market-cap">0.1045</td>
+                <td class="price">0.104</td>
+                <td class="change-down">-3.2</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>KOMA</td>
+                <td>KOMA</td>
+                <td class="market-cap">0.08</td>
+                <td class="price">0.0008</td>
+                <td class="change-up">+6.7</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>HOPE</td>
+                <td>HOPE</td>
+                <td class="market-cap">0.06</td>
+                <td class="price">0.0006</td>
+                <td class="change-down">-1.1</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Snorter Bot</td>
+                <td>SNORT</td>
+                <td class="market-cap">0.05</td>
+                <td class="price">0.0005</td>
+                <td class="change-up">+9.8</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Maxi Doge</td>
+                <td>MAXI</td>
+                <td class="market-cap">0.04</td>
+                <td class="price">0.0004</td>
+                <td class="change-up">+11.2</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>HIPPO</td>
+                <td>HIPPO</td>
+                <td class="market-cap">0.031</td>
+                <td class="price">0.0031</td>
+                <td class="change-down">-4.5</td>
+            </tr>
+        </tbody>
+    </table>
+
     <script src="script.js"></script>
 </body>
 </html>
